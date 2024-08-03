@@ -14,6 +14,7 @@ backdrop.addEventListener("click", (e) => {
   toggleModal();
 });
 
+
 function toggleModal() {
   backdrop.classList.toggle("is-open");
 }
