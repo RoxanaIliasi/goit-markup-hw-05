@@ -61,14 +61,14 @@
       </div>
     </header>
 
-    <div class="version">v:2024</div>
+  
 
     <main>
       <!-- Hero -->
       <section id="hero" class="section hero">
         <div class="container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" data-modal-open type="button">Order Service</button>
         </div>
       </section>
 
@@ -130,9 +130,9 @@
           </ul>
         </div>
       </section>
-      <!-- #endregion -->
 
-      <!-- #region:Our Team -->
+      
+
       <section id="team" class="section team">
         <div class="container">
           <h2 class="team-header">Our Team</h2>
@@ -487,7 +487,85 @@
           <!-- </li> -->
           <!-- </ul> -->
         </div>
+
+      <div class="footer-subscribe">
+        <p class="subscribe-text">Subscribe</p>
+        <form action="footer-form" class="footer-form">
+            <label for="Subscribe-email" class="subscribe-email">
+              <input type="email" class="modal-subscribe" name="email" id="subscribe-email" placeholder="E-mail">
+            </label>
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+
+
+      </div>
+
       </div>
     </footer>
+
+    <div class="overlay" data-modal>
+      <div class="modal">
+        <button type="button" class="model-close-btn" data-modal-close>
+          <svg class="close-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form action="overlay-form" class="overlay-form">
+          <div class="form-field">
+            <label for="user-name" class="label">Name</label>
+            <div class="modal-wrap">
+              <input type="text" class="modal-input" name="user-name" id="user-name" required="">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="Phone" class="label">Phone</label>
+            <div class="modal-wrap">
+              <input type="tel" class="modal-input" name="Phone" id="Phone" required="">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email" class="label">Email</label>
+            <div class="modal-wrap">
+              <input type="email" class="modal-input" name="email" id="email" required="">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-comment">
+            <label for="user-comment" class="label">Comment</label>
+            <textarea class="user-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+          </div>
+          <div class="form-terms">
+            <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="modal-terms visually-hidden">
+            <label for="user-privacy" class="modal-terms-check">
+              <span class="span-check"><svg class="check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+
+              <a class="form-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="terms-btn">send</button>
+        </form>
+      </div>
+    </div>
+
+   <script src="./js/modal.js"></script>
+
   </body>
 </html>
